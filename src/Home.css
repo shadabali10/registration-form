@@ -1,0 +1,102 @@
+span{
+    color: red;
+}
+
+.signup-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+    background-color: rgba(83, 121, 246, 0.559);
+}
+
+.signup-main{
+    height:75%;
+    width: 70%;
+    border-radius:5px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.welcome-text{
+    font-size: x-large;
+    font-weight: 700;
+    color: rgba(83, 121, 246);
+    text-align: center;
+}
+.details-fill-text{
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+}
+input{  
+    border-radius: 10px;
+    margin: 5px;
+    /* height: 35px; */
+    padding: 8px;
+    width:28vw;
+    outline: none;
+}
+
+
+.signup-left{
+    width:45%;
+    height: 100%;
+    background-image: url('./IMAGES/login.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.signup-right{
+    width:50%;
+    height: 100%;
+    display: flex;
+}
+
+.form{
+    margin: auto;
+    background-color: #fff;
+    /* padding: 100px; */
+    border-radius: 20px;
+    border: .1px solid rgba(83, 121, 246);
+    padding: 30px;
+}
+.check-account{
+    text-align: center;
+}
+.signup-button{
+    height:40px;
+    width:29.2vw ;
+    position: relative;
+    left: 5px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight:500;
+    font-size: large;
+    background-color:rgba(83, 121, 246, 0.559);
+}
+a{
+    color: rgba(83, 121, 246);;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+   .signup-left{
+    display: none;
+    margin: auto;
+    width:60%;
+   }
+   .signup-main{
+    width: 90%;
+    display: flex;
+   }
+   .signup-main{
+    visibility: none;
+   }
+}
