@@ -2,6 +2,9 @@ span{
     color: red;
 }
 
+button{
+    cursor: pointer;
+}
 .signup-container{
     display: flex;
     justify-content: center;

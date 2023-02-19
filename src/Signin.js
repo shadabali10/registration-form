@@ -16,24 +16,18 @@ const Signin = () => {
    let {email,password} = formValues;
    const handleChange = (e)=>{
        const {name,value} = e.target;
-        //   name=e.target.name;
-        //   value=e.target.value;
+       
        setFormValues({...formValues,[name]:value}) 
       
    }
-
-
-
 
  const handleSubmit = (e) =>{
    e.preventDefault();
  setIsSubmit(true);
  setFormErrors(validate(formValues));
- axios.post('https://fundflow.onrender.com/user/register',formValues).then((res)=>{
-  console.log(res);
- })
  
  setInputData([...inputData,{email,password}])
+
 }
 
 useEffect(()=>{
@@ -98,16 +92,20 @@ if(!values.password){
      </div>
      </div>
    </div>
-   {
+
+  <div className='invester-profile'>
+  {
     inputData.map((data)=>{
         return (
             <>
-            <div>{data.email}</div>
-            <div>{data.password}</div>
+               <div className=''>
+
+               </div>
             </>
         )
     })
    }
+  </div>
    </>
  )
 }

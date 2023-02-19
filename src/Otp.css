@@ -1,0 +1,15 @@
+.otpBox{
+    height: 2rem;
+    width: 2rem;
+    background-color: #9fb4fa;
+}
+
+.otp-main{
+    display: flex;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
